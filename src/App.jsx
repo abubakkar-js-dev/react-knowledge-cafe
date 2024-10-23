@@ -1,13 +1,14 @@
 
 import './App.css'
-import Blogs from './Components/Blogs/Blogs'
+import Header from './Components/Header/Header'
+import Main from './Components/Main/Main'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl bg-purple-300 p-4 text-white text-center font-bold'>React with Tailwind Css</h1>
-      <Blogs />
+    <Header />
+    <Main />
     </>
   )
 }
