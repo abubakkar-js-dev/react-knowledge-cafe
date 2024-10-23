@@ -1,7 +1,6 @@
 import Bookmark from "../../Bookmark/Bookmark";
 import PropTypes from "prop-types";
 const Bookmarks = ({bookmarks,readtime}) => {
-    console.log(readtime);
     return (
         <div className="md:w-1/3 ml-0 md:ml-6 h-full">
             <div className="bg-[#6047EC]/10 p-6 md:p-8 mb-4 md:mb-6 rounded-lg border border-[#6047EC]">

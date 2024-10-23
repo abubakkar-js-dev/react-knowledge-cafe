@@ -23,7 +23,7 @@ const Blog = ({blog,handleBookmarksBtn,handleMarksAsRead}) => {
             <div className="space-x-2 text-lg md:text-xl font-medium text-gray-500 mb-3 md:mb-4">
                 {hashtags.map((hash,idx) => <span key={idx}>{hash}</span>)}
             </div>
-            <button onClick={()=> handleMarksAsRead(reading_time)}><a className="text-[#6047EC] text-lg md:text-xl font-semibold underline" href="#">Mark as read</a></button>
+            <button onClick={()=> handleMarksAsRead(blog.id,reading_time)}><a className="text-[#6047EC] text-lg md:text-xl font-semibold underline" href="#">Mark as read</a></button>
            </div>
         </div>
     );

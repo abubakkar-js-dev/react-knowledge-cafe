@@ -17,12 +17,15 @@ const handleBookmarksBtn = (blog) => {
 
 }
 
-const handleMarksAsRead = (readingTime) =>{
+const handleMarksAsRead = (id,readingTime) =>{
     const timeNum = parseInt(readingTime[0]);
     setReadtime(readtime + timeNum);
+
+    // remove from bookmarks when read
+    const remainingBookmarks = bookmarks.filter((bookmark) => bookmark.id !== id);
+    setBookmarks(remainingBookmarks);
 }
 
-console.log(bookmarks);
     return (
         <div className="container mx-auto flex flex-col md:flex-row justify-between ">
             <Blogs
